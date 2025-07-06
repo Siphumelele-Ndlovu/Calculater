@@ -1,0 +1,26 @@
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+ <body>
+     <h1 id="heading1" onclick="changeText ()">Hello, World!</h1>
+     <p id="addition"></p>
+
+     <script>
+       document.getElementById("addition").innerHTML = addNumbers(5, 10);
+
+        function changeText() {
+           if(document.getElementById("heading1").innerHTML === "Hello, World!") {
+               document.getElementById("heading1").innerHTML = "Welcome to my website!";
+           } else {
+               document.getElementById("heading1").innerHTML = "Hello, World!";
+           }
+        }
+
+        function addNumbers(num1, num2) {
+            return num1 + num2;
+        }
+
+        </script>
+    </body>
+</html> 
